@@ -31,7 +31,7 @@ document.getElementById('reverseButton').addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const konfersiSuhuLink = document.getElementById('konfersiSuhuLink');
+    const konversiSuhuLink = document.getElementById('konversiSuhuLink');
     const celsiusLink = document.getElementById('celsiusLink');
     const fahrenheitLink = document.getElementById('fahrenheitLink');
     const konfersiSuhuInfo = document.getElementById('konfersiSuhuInfo');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fahrenheitInfo = document.getElementById('fahrenheitInfo');
     const navbar = document.getElementById('navbar');
 
-    konfersiSuhuLink.addEventListener('click', (e) => {
+    konversiSuhuLink.addEventListener('click', (e) => {
         e.preventDefault();
         konfersiSuhuInfo.style.display = 'block';
         celsiusInfo.style.display = 'none';
