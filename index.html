@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Konversi Suhu</h1>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#konfersiSuhuInfo" id="konfersiSuhuLink">Konfersi Suhu</a></li>
+                <li><a href="#celsiusInfo" id="celsiusLink">Celsius</a></li>
+                <li><a href="#fahrenheitInfo" id="fahrenheitLink">Fahrenheit</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="left-section">
+            <form id="temperatureForm">
+                <label for="temperatureInput" id="inputLabel">Masukkan Suhu (°C):</label>
+                <input type="number" id="temperatureInput" name="temperatureInput" required>
+                
+                <table class="grid-container">
+                    <tr>
+                        <td><button type="button" id="convertButton">Konversi</button></td>
+                        <td><button type="button" id="resetButton">Reset</button></td>
+                        <td><button type="button" id="reverseButton">Reverse</button></td>
+                    </tr>
+                </table>
+
+                <label for="convertedTemperature" id="outputLabel">Hasil dalam (°F):</label>
+                <input type="text" id="convertedTemperature" readonly>
+                <fieldset id="explanationBox">
+                    <legend>Cara Kalkulasi</legend>
+                    <p id="explanation"></p>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section class="right-section">
+            <article id="konfersiSuhuInfo" class="info">
+                <h2>Penjelasan Konfersi Suhu</h2>
+                <p>Konfersi Suhu bertujuan untuk mempermudah mengubah Celsius ke Fahrenheit ataupun sebaliknya dimana rumus pengubahan suhu adalah sebagai berikut:
+                    <ul>
+                        <li>Celsius ke Fahrenheit = (°C × 9/5) + 32 = °F</li>
+                        <li>Fahrenheit ke Celsius = (°F - 32) × 5/9 = °C</li>
+                    </ul>
+                </p>
+            </article>
+            <article id="celsiusInfo" class="info">
+                <h2>Penjelasan Celsius</h2>
+                <p>Celsius adalah skala suhu yang digunakan di sebagian besar negara di dunia. Celcius memiliki satuan °C. Dalam melakukan perbandingan antara dingin dan panas. Titik beku air adalah 0°C dan titik didih air adalah 100°C pada tekanan atmosfer standar.</p>
+            </article>
+            <article id="fahrenheitInfo" class="info">
+                <h2>Penjelasan Fahrenheit</h2>
+                <p>Fahrenheit adalah skala pengukur suhu yang paling banyak dipakai di negara Amerika Serikat. Skala Fahrenheit mempunyai satuan °F. Adapun di skala ini,titik beku air adalah 32°F dan titik didih air adalah 212°F pada tekanan atmosfer standar.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Naafi'dea Widanindita 2024 Kalkulator Suhu</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
