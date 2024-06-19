@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const konversiSuhuLink = document.getElementById('konversiSuhuLink');
     const celsiusLink = document.getElementById('celsiusLink');
     const fahrenheitLink = document.getElementById('fahrenheitLink');
-    const konfersiSuhuInfo = document.getElementById('konfersiSuhuInfo');
+    const konversiSuhuInfo = document.getElementById('konversiSuhuInfo');
     const celsiusInfo = document.getElementById('celsiusInfo');
     const fahrenheitInfo = document.getElementById('fahrenheitInfo');
     const navbar = document.getElementById('navbar');
 
     konversiSuhuLink.addEventListener('click', (e) => {
         e.preventDefault();
-        konfersiSuhuInfo.style.display = 'block';
+        konversiSuhuInfo.style.display = 'block';
         celsiusInfo.style.display = 'none';
         fahrenheitInfo.style.display = 'none';
     });
@@ -49,19 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
     celsiusLink.addEventListener('click', (e) => {
         e.preventDefault();
         celsiusInfo.style.display = 'block';
-        konfersiSuhuInfo.style.display = 'none';
+        konversiSuhuInfo.style.display = 'none';
         fahrenheitInfo.style.display = 'none';
     });
 
     fahrenheitLink.addEventListener('click', (e) => {
         e.preventDefault();
         fahrenheitInfo.style.display = 'block';
-        konfersiSuhuInfo.style.display = 'none';
+        konversiSuhuInfo.style.display = 'none';
         celsiusInfo.style.display = 'none';
     });
 
     // Display the "Konfersi Suhu" info by default
-    konfersiSuhuInfo.style.display = 'block';
+    konversiSuhuInfo.style.display = 'block';
 });
 
 
